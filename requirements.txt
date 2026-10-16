@@ -1,0 +1,28 @@
+# ---- Agent / LLM ----
+langchain>=0.3
+langchain-core>=0.3
+langchain-openai>=0.2
+langgraph>=0.2
+
+# ---- Retrieval ----
+faiss-cpu>=1.8
+rank-bm25>=0.2.2
+jieba>=0.42.1
+# 本地语义 embedding（EMBED_MODE=local，生产/离线推荐，体积较大含 torch）
+sentence-transformers>=3.0
+
+# ---- API / CLI ----
+fastapi>=0.111
+uvicorn>=0.30
+pydantic>=2.7
+python-dotenv>=1.0
+python-multipart>=0.0.9
+typer>=0.12
+rich>=13.7
+
+# ---- Optional parsing ----
+pypdf>=4.2
+python-docx>=1.1
+
+# ---- Test ----
+pytest>=8.2
